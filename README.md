@@ -58,9 +58,11 @@ We developed five different models:
 - Sequential forward with ridge regression with 20 features
 - Lasso regression using the dataset constructed by the sequential forward model
 
+Models were validated using both train/test and k-fold validation techniques. Mean Squared Error (MSE) was used to compare the error in the prediction for different modelling methodologies. R-sq was used to understand what percentage of the variation in the data could be explained by each model. Grid search was applied to find the optimum alpha values for ridge and lasso regression. 
+
 ## Evaluation
 Below is a summary of our observations:
-- The simple linear regression model was able to explain 64% of the variation in the data.
+- The multiple linear regression model was able to explain 64% of the variation in the data.
 - Adding interaction variables (2-Degree polynomial features) did work very well on the train dataset. More research is required to understand why the model failed on the test sample.
 - We did not get any additional value from ridge regression. The coefficients of the variables are slightly different but there was no change in performance statistics.
 - We were able to develop a more condensed model with 20 features using sequential forward selection but of course, this came at a cost of a lower R-sq and higher MSE.
@@ -75,7 +77,7 @@ The study had limitations that should be revisited in the future:
 - Building a set of segmented models instead of one model could also improve the prediction quality. For example, the depreciation of the luxury cars might be different. We can build a separate model for luxury cars and another model for economy cars. We can also build a different model for trucks.
 
 ## Deployment
-We made the following recommendation to our client:
+We made the following recommendations to our client:
 - Newer cars tend to have a much higher resale value
 - Cars with more than 50K miles on them have a much lower resale value
 - Even though age and mileage are important factors for the resale value, size of the car, fuel and drive type and condition impact the resale value.
