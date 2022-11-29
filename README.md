@@ -62,7 +62,7 @@ We developed five different models:
 Models were validated using both train/test and k-fold validation techniques. Mean Squared Error (MSE) was used to compare the error in the prediction for different modelling methodologies. R-sq was used to understand what percentage of the variation in the data could be explained by each model. Grid search was applied to find the optimum alpha values for ridge and lasso regression. 
 
 ## Evaluation
-Below is a summary of our observations:
+Below is the summary of our observations:
 - The multiple linear regression model was able to explain 64% of the variation in the data.
 - Adding interaction variables (2-Degree polynomial features) did work very well on the train dataset. More research is required to understand why the model failed on the test sample.
 - We did not get any additional value from ridge regression. The coefficients of the variables are slightly different but there was no change in performance statistics.
@@ -72,7 +72,7 @@ Below is a summary of our observations:
 The top factors that impact the car price are the age of the car, number of cylinders, fuel type, mileage, drive type, and its condition.
 
 The study had limitations that should be revisited in the future:
-- There are a large number of records with missing and other values. Instead of imputing these values, we decided to use hot encoding after assigning missing and other to different categories, which increased the dimensionality of the dataset. We can repeat our steps by trying label encoder for the variables with ordinal values. For example, the variable 'cyclinders' has values 3-12 cyclinders, other and missing. If we didn't have other and missing, we could label encode 3 cylinders with 3, 4 cylinders with 4, etc.
+- There are a large number of records with missing and "other" values. Instead of imputing these values, we decided to use hot encoding after assigning missing and other to different categories, which increased the dimensionality of the dataset. We can repeat our steps by trying label encoder for the variables with ordinal values. For example, the variable 'cyclinders' has values 3-12 cyclinders, other and missing. If we didn't have other and missing, we could label encode 3 cylinders with 3, 4 cylinders with 4, etc.
 - The dataset could be enhanced further by pulling information from public resources. For example, features such as gas mileage, number of doors, luxury/economy indicator might also be good predictors of resale value. This information could be pulled online by the using the column for 'model'.
 - The interaction between the variables should be revisited. The model with 2-degree polynomial features provided an R-sq of 72% on the training dataset. After reprocessing the dataset (use label encoder instead of one hot encoding, remove other/missing categories), polynomial features could be tested.
 - Building a set of segmented models instead of one model could also improve the prediction quality. For example, the depreciation of the luxury cars might be different. We can build a separate model for luxury cars and another model for economy cars. We can also build a different model for trucks.
