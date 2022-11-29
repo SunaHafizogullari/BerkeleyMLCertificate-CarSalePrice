@@ -1,4 +1,6 @@
 # What drives the resale value of a used car?
+
+## Business Understanding:
 The objective of this project is to identify the factors affecting the resale value of the used cars. A dataset of 426K records was used in the analysis to determine whether there is a relationship between factors such as the age of the car, manufacturer, condition, fuel type, transmission type, mileage, color, etc., and car resale value.
 
 The top factors that impact the car price are the age of the car, number of cylinders, fuel type, mileage, drive type, and its condition.
