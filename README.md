@@ -48,6 +48,7 @@ Any issues with the data were resolved in this step:
 - A "missing" category was defined for the categorical variables with missing data.
 - We excluded any outliers for the car price and applied log transformation. We confirmed that the distribution of log-price looks normal.
 - We analyzed the relationship between log-price and independent variables to make a decision on the final list of variables to keep in the model.
+- We hot encoded the categorical variables. We did not do any label encoding since the values were not rank ordering.
 - We prepared train (70%) and test (30%) samples for model development.
 
 ## Modeling
