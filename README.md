@@ -27,7 +27,7 @@ Several steps were taken to get to know the dataset and identify any data qualit
   - Are there any columns not required for the modeling problem?
   - Review of the rows in the dataset:
 
-Are there sufficient number of observations for the prediction problems?
+Are there sufficient records for the prediction problem?
 - Are there any duplicate records?
 - Are there any outliers, e.g., records with very high resale value or mileage?
 - Are there any records outside our analysis space such as data related with new cars for a prediction problem of used car resale value?
