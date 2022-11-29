@@ -78,8 +78,8 @@ The study had limitations that should be revisited in the future:
 
 ## Deployment
 We made the following recommendations to our client:
-- Newer cars tend to have a much higher resale value
-- Cars with more than 50K miles on them have a much lower resale value
+- Newer cars tend to have a much higher resale value.
+- Cars with more than 50K miles on them have a much lower resale value.
 - Even though age and mileage are important factors for the resale value, size of the car, fuel and drive type and condition impact the resale value.
 - We would like to continue our working relationship to further enhance our prediction by enhancing the dataset using other publicly available data such as gas mileage, number of doors, developing separate models for cars and trucks, and testing other modeling techniques.
 
